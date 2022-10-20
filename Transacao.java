@@ -1,14 +1,14 @@
 package trabalho;
 
 public interface Transacao {
-	
-	
-	public void deposito ();
-	public void saque ();
-	public void saldo ();
-	public void transferencia();
 
 
+	public void deposito (double valor );
 
+	public boolean saque (double valor);
+
+	public double saldo();
+
+	public boolean transferencia(double valor, Conta outraConta);
 
 }
