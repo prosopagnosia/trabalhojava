@@ -5,7 +5,7 @@ public  class Conta {
 	private String nome, cpf;
 	private int numero;
 	private double valorConta;
-	
+
 	public Conta(String nome, String cpf, int numero, double valorConta) {
 		this.nome = nome;
 		this.cpf = cpf;
@@ -49,12 +49,15 @@ public  class Conta {
 	public String toString() {
 		return "Conta [nome=" + nome + ", cpf=" + cpf + ", numero=" + numero + ", valorConta=" + valorConta + "]";
 	}
-	
-	
 
-	
-	
-	
-	
+	public double saldo (){
+		return valorConta;
+
+	}
+
+	public boolean transferencia ( Conta outraConta){
+		;
+
+	}
 
 }
